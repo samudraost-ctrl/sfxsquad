@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAHABAT SFX - Donasi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:
+    linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.88)),
+    url('1000031100.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    color:white;
+    overflow-x:hidden;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.header h1{
+    font-size:70px;
+    font-weight:800;
+    background:linear-gradient(90deg,#27c056,#ffffff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.header p{
+    color:#e4e4e4;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:20px;
+}
+
+.card{
+    background:rgba(10,10,10,0.78);
+    backdrop-filter:blur(10px);
+
+    border:1px solid rgba(39,192,86,0.3);
+
+    border-radius:26px;
+    padding:25px;
+
+    box-shadow:0 0 25px rgba(0,0,0,0.35);
+}
+
+.card h2{
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.payment{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:rgba(255,255,255,0.03);
+    border-radius:18px;
+    padding:16px;
+    margin-bottom:16px;
+}
+
+.payment img{
+    width:65px;
+    height:65px;
+    background:white;
+    border-radius:14px;
+    padding:8px;
+}
+
+.payment h3{
+    font-size:24px;
+    color:#43d96b;
+}
+
+.payment p{
+    color:#d7d7d7;
+    margin-top:4px;
+}
+
+.step p{
+    margin-bottom:14px;
+    color:#dddddd;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    color:#f1f1f1;
+    font-size:15px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:16px;
+    border:none;
+    outline:none;
+
+    background:rgba(0,0,0,0.45);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:16px;
+
+    color:white;
+    font-size:15px;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+.nominal-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px;
+}
+
+.nominal-btn{
+    padding:12px 22px;
+    border-radius:14px;
+
+    border:1px solid #2eb95d;
+
+    background:transparent;
+    color:white;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.nominal-btn:hover,
+.nominal-btn.active{
+    background:#23984a;
+}
+
+.submit-btn{
+
+    width:100%;
+    padding:18px;
+
+    border:none;
+    border-radius:18px;
+
+    background:#23984a;
+
+    color:white;
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    transform:scale(1.02);
+    background:#2eb95d;
+}
+
+.donatur-list{
+    margin-top:25px;
+}
+
+.donatur{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(255,255,255,0.03);
+
+    border-radius:18px;
+    padding:18px;
+
+    margin-bottom:15px;
+
+    border:1px solid rgba(255,255,255,0.04);
+}
+
+.donatur-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.avatar{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    background:#23984a;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-weight:bold;
+}
+
+.nominal{
+    color:#4eff82;
+    font-weight:700;
+    font-size:20px;
+}
+
+.small{
+    color:#cfcfcf;
+    margin-top:4px;
+    font-size:14px;
+}
+
+.footer{
+
+    margin-top:30px;
+    text-align:center;
+
+    color:#e1e1e1;
+
+    padding:30px;
+}
+
+@media(max-width:900px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.header h1{
+    font-size:46px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>SAHABAT SFX</h1>
+
+<p>
+Terima kasih sudah mendukung perjalanan dan perkembangan komunitas kami 💚
+</p>
+
+</div>
+
+<div class="grid">
+
+<!-- LEFT -->
+
+<div>
+
+<div class="card">
+
+<h2>Metode Donasi</h2>
+
+<div class="payment">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Gopay_logo.svg">
+
+<div>
+<h3>GoPay</h3>
+<p>085261616060</p>
+</div>
+
+</div>
+
+<div class="payment">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg">
+
+<div>
+<h3>Bank BCA</h3>
+<p>1751195350</p>
+</div>
+
+</div>
+
+<div class="payment">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Bank_Syariah_Indonesia.svg">
+
+<div>
+<h3>Bank BSI</h3>
+<p>1059612472</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card step">
+
+<h2>Cara Donasi</h2>
+
+<p>1. Pilih metode pembayaran</p>
+<p>2. Transfer sesuai nominal donasi</p>
+<p>3. Isi form setelah melakukan donasi</p>
+<p>4. Donasi akan tampil di website</p>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="card">
+
+<h2>Form Donasi</h2>
+
+<div class="form-group">
+
+<label>Nama Donatur (Opsional)</label>
+
+<input type="text" id="nama" placeholder="Masukkan nama Anda">
+
+</div>
+
+<div class="form-group">
+
+<label>Pilih Nominal Donasi</label>
+
+<div class="nominal-buttons">
+
+<button class="nominal-btn" onclick="setNominal(5000,event)">5K</button>
+
+<button class="nominal-btn" onclick="setNominal(10000,event)">10K</button>
+
+<button class="nominal-btn" onclick="setNominal(20000,event)">20K</button>
+
+<button class="nominal-btn" onclick="setNominal(50000,event)">50K</button>
+
+<button class="nominal-btn" onclick="setNominal(100000,event)">100K</button>
+
+</div>
+
+</div>
+
+<div class="form-group">
+
+<label>Atau Masukkan Nominal Lain</label>
+
+<input type="number" id="nominal" placeholder="Contoh: 25000">
+
+</div>
+
+<div class="form-group">
+
+<label>Metode Pembayaran</label>
+
+<select id="metode">
+
+<option>GoPay</option>
+<option>BCA</option>
+<option>BSI</option>
+
+</select>
+
+</div>
+
+<div class="form-group">
+
+<label>Pesan (Opsional)</label>
+
+<textarea id="pesan" placeholder="Tulis pesan untuk Sahabat SFX..."></textarea>
+
+</div>
+
+<button class="submit-btn" onclick="donasi()">
+
+Saya Sudah Donasi
+
+</button>
+
+</div>
+
+</div>
+
+<!-- DONATUR -->
+
+<div class="card donatur-list">
+
+<h2>Sahabat SFX Yang Sudah Donasi</h2>
+
+<div id="listDonasi"></div>
+
+</div>
+
+<div class="footer">
+
+💚 Terima kasih atas dukungan terbaik Anda
+
+</div>
+
+</div>
+
+<script>
+
+function setNominal(value,event){
+
+document.getElementById("nominal").value = value;
+
+document.querySelectorAll('.nominal-btn').forEach(btn=>{
+btn.classList.remove('active');
+});
+
+event.target.classList.add('active');
+
+}
+
+function formatRupiah(angka){
+
+return new Intl.NumberFormat('id-ID',{
+
+style:'currency',
+currency:'IDR'
+
+}).format(angka);
+
+}
+
+const ucapan = [
+
+"Terima kasih atas dukungannya 💚",
+"Semoga rezekinya lancar selalu ✨",
+"Support kamu sangat berarti 🙏",
+"Terima kasih sudah membantu Sahabat SFX 🚀",
+"Semoga segala kebaikan kembali kepada kamu 💚"
+
+];
+
+function donasi(){
+
+const nama = document.getElementById('nama').value || "Anonymous";
+
+const nominal = document.getElementById('nominal').value;
+
+const metode = document.getElementById('metode').value;
+
+const pesan = document.getElementById('pesan').value;
+
+if(!nominal){
+
+alert("Masukkan nominal donasi");
+
+return;
+
+}
+
+const random = ucapan[Math.floor(Math.random()*ucapan.length)];
+
+const html = `
+
+<div class="donatur">
+
+<div class="donatur-left">
+
+<div class="avatar">
+
+${nama.charAt(0).toUpperCase()}
+
+</div>
+
+<div>
+
+<h3>${nama}</h3>
+
+<p class="small">
+
+${pesan || random}
+
+</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="nominal">
+
+${formatRupiah(nominal)}
+
+</div>
+
+<div class="small">
+
+${metode}
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+document.getElementById("listDonasi").innerHTML += html;
+
+alert(random);
+
+fetch("https://formsubmit.co/ajax/samudraprofx@gmail.com", {
+
+method:"POST",
+
+headers:{
+'Content-Type':'application/json',
+'Accept':'application/json'
+},
+
+body:JSON.stringify({
+
+nama:nama,
+nominal:nominal,
+metode:metode,
+pesan:pesan
+
+})
+
+});
+
+document.getElementById('nama').value = "";
+document.getElementById('nominal').value = "";
+document.getElementById('pesan').value = "";
+
+}
+
+</script>
+
+</body>
+</html>
