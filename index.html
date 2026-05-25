@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SAHABAT SFX - Donasi</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -10,307 +11,319 @@
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
 
-    background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
-    url('1000031100.jpg');
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+url('1000031100.jpg');
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
 
-    color:white;
-    overflow-x:hidden;
+color:white;
+overflow-x:hidden;
+
 }
 
 .container{
-    width:100%;
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:40px 20px;
 }
 
 .header{
-    text-align:center;
-    margin-bottom:40px;
+text-align:center;
+margin-bottom:40px;
 }
 
 .header h1{
 
-    font-size:70px;
-    font-weight:800;
+font-size:70px;
+font-weight:800;
 
-    background:linear-gradient(90deg,#32d67d,#ffffff);
+background:linear-gradient(90deg,#32d67d,#ffffff);
 
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
 }
 
 .header p{
-    color:#f1f1f1;
-    margin-top:10px;
-    font-size:18px;
+color:#f1f1f1;
+margin-top:10px;
+font-size:18px;
 }
 
 .grid{
-    display:grid;
-    grid-template-columns:350px 1fr;
-    gap:20px;
+display:grid;
+grid-template-columns:350px 1fr;
+gap:20px;
 }
 
 .card{
 
-    background:rgba(8,8,8,0.45);
+background:rgba(8,8,8,0.45);
 
-    backdrop-filter:blur(10px);
+backdrop-filter:blur(10px);
 
-    border:1px solid rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.08);
 
-    border-radius:26px;
+border-radius:26px;
 
-    padding:25px;
+padding:25px;
 
-    box-shadow:0 0 30px rgba(0,0,0,0.35);
+box-shadow:0 0 30px rgba(0,0,0,0.35);
+
 }
 
 .card h2{
-    margin-bottom:20px;
-    font-size:30px;
+margin-bottom:20px;
+font-size:30px;
 }
 
 .payment{
 
-    display:flex;
-    align-items:center;
-    gap:15px;
+display:flex;
+align-items:center;
+gap:15px;
 
-    background:rgba(255,255,255,0.04);
+background:rgba(255,255,255,0.04);
 
-    border-radius:18px;
+border-radius:18px;
 
-    padding:16px;
-    margin-bottom:16px;
+padding:16px;
+margin-bottom:16px;
+
 }
 
 .payment img{
 
-    width:65px;
-    height:65px;
+width:65px;
+height:65px;
 
-    background:white;
+background:white;
 
-    border-radius:14px;
+border-radius:14px;
 
-    padding:8px;
+padding:8px;
+
 }
 
 .payment h3{
-    font-size:24px;
-    color:#4cff91;
+font-size:24px;
+color:#4cff91;
 }
 
 .payment p{
-    color:#ececec;
-    margin-top:4px;
-}
-
-.step p{
-    margin-bottom:14px;
-    color:#ececec;
+color:#ececec;
+margin-top:4px;
 }
 
 .form-group{
-    margin-bottom:20px;
+margin-bottom:20px;
 }
 
 .form-group label{
-    display:block;
-    margin-bottom:10px;
-    color:#ffffff;
-    font-size:15px;
+display:block;
+margin-bottom:10px;
+color:#ffffff;
+font-size:15px;
 }
 
 .form-group input,
 .form-group textarea,
 .form-group select{
 
-    width:100%;
+width:100%;
 
-    padding:16px;
+padding:16px;
 
-    border:none;
-    outline:none;
+border:none;
+outline:none;
 
-    background:rgba(0,0,0,0.35);
+background:rgba(0,0,0,0.35);
 
-    border:1px solid rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.08);
 
-    border-radius:16px;
+border-radius:16px;
 
-    color:white;
-    font-size:15px;
+color:white;
+font-size:15px;
+
 }
 
 textarea{
-    resize:none;
-    height:120px;
+resize:none;
+height:120px;
 }
 
 .nominal-buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:10px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-top:10px;
 }
 
 .nominal-btn{
 
-    padding:12px 22px;
+padding:12px 22px;
 
-    border-radius:14px;
+border-radius:14px;
 
-    border:1px solid rgba(47,201,94,0.45);
+border:1px solid rgba(47,201,94,0.45);
 
-    background:rgba(0,0,0,0.35);
+background:rgba(0,0,0,0.35);
 
-    color:white;
+color:white;
 
-    cursor:pointer;
+cursor:pointer;
 
-    transition:0.3s;
+transition:0.3s;
 
-    backdrop-filter:blur(4px);
 }
 
 .nominal-btn:hover,
 .nominal-btn.active{
 
-    background:linear-gradient(135deg,#0d5f3d,#178754);
+background:linear-gradient(135deg,#0d5f3d,#178754);
 
-    border-color:#32d67d;
+border-color:#32d67d;
 
 }
 
 .submit-btn{
 
-    width:100%;
+width:100%;
 
-    padding:18px;
+padding:18px;
 
-    border:none;
+border:none;
 
-    border-radius:18px;
+border-radius:18px;
 
-    background:linear-gradient(135deg,#0d5f3d,#178754);
+background:linear-gradient(135deg,#0d5f3d,#178754);
 
-    color:white;
+color:white;
 
-    font-size:18px;
-    font-weight:600;
+font-size:18px;
+font-weight:600;
 
-    cursor:pointer;
+cursor:pointer;
 
-    transition:0.3s;
+transition:0.3s;
 
-    box-shadow:0 0 15px rgba(23,135,84,0.35);
+box-shadow:0 0 15px rgba(23,135,84,0.35);
+
 }
 
 .submit-btn:hover{
 
-    transform:scale(1.02);
+transform:scale(1.02);
 
-    background:linear-gradient(135deg,#178754,#21b26b);
+background:linear-gradient(135deg,#178754,#21b26b);
 
 }
 
 .donatur-list{
-    margin-top:25px;
+margin-top:25px;
 }
 
 .donatur{
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
 
-    background:rgba(255,255,255,0.04);
+background:rgba(255,255,255,0.04);
 
-    border-radius:18px;
+border-radius:18px;
 
-    padding:18px;
+padding:18px;
 
-    margin-bottom:15px;
+margin-bottom:15px;
 
-    border:1px solid rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.05);
+
 }
 
 .donatur-left{
-    display:flex;
-    align-items:center;
-    gap:15px;
+display:flex;
+align-items:center;
+gap:15px;
 }
 
 .avatar{
 
-    width:55px;
-    height:55px;
+width:55px;
+height:55px;
 
-    border-radius:50%;
+border-radius:50%;
 
-    background:linear-gradient(135deg,#0d5f3d,#178754);
+background:linear-gradient(135deg,#0d5f3d,#178754);
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+display:flex;
+align-items:center;
+justify-content:center;
 
-    font-weight:bold;
+font-weight:bold;
+
 }
 
 .nominal{
 
-    color:#57ff88;
+color:#57ff88;
 
-    font-weight:700;
+font-weight:700;
 
-    font-size:20px;
+font-size:20px;
+
 }
 
 .small{
 
-    color:#e0e0e0;
+color:#e0e0e0;
 
-    margin-top:4px;
+margin-top:4px;
 
-    font-size:14px;
+font-size:14px;
+
 }
 
 .footer{
 
-    margin-top:30px;
+margin-top:30px;
 
-    text-align:center;
+text-align:center;
 
-    color:#f0f0f0;
+color:#f0f0f0;
 
-    padding:30px;
+padding:30px;
+
 }
 
 @media(max-width:900px){
 
 .grid{
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 }
 
 .header h1{
-    font-size:48px;
+font-size:48px;
+}
+
+.donatur{
+flex-direction:column;
+gap:15px;
+align-items:flex-start;
 }
 
 }
@@ -327,14 +340,12 @@ textarea{
 <h1>SAHABAT SFX</h1>
 
 <p>
-Terima kasih sudah mendukung perjalanan dan perkembangan komunitas kami 💚
+Terima kasih sudah mendukung perjalanan dan perkembangan komunitas SFX 💚
 </p>
 
 </div>
 
 <div class="grid">
-
-<!-- LEFT -->
 
 <div>
 
@@ -377,20 +388,7 @@ Terima kasih sudah mendukung perjalanan dan perkembangan komunitas kami 💚
 
 </div>
 
-<div class="card step">
-
-<h2>Cara Donasi</h2>
-
-<p>1. Pilih metode pembayaran</p>
-<p>2. Transfer sesuai nominal donasi</p>
-<p>3. Isi form setelah melakukan donasi</p>
-<p>4. Donasi akan tampil di website</p>
-
 </div>
-
-</div>
-
-<!-- RIGHT -->
 
 <div class="card">
 
@@ -398,15 +396,15 @@ Terima kasih sudah mendukung perjalanan dan perkembangan komunitas kami 💚
 
 <div class="form-group">
 
-<label>Nama Donatur (Opsional)</label>
+<label>Nama Donatur</label>
 
-<input type="text" id="nama" placeholder="Masukkan nama Anda">
+<input type="text" id="nama" placeholder="Masukkan nama">
 
 </div>
 
 <div class="form-group">
 
-<label>Pilih Nominal Donasi</label>
+<label>Pilih Nominal</label>
 
 <div class="nominal-buttons">
 
@@ -426,7 +424,7 @@ Terima kasih sudah mendukung perjalanan dan perkembangan komunitas kami 💚
 
 <div class="form-group">
 
-<label>Atau Masukkan Nominal Lain</label>
+<label>Atau Nominal Bebas</label>
 
 <input type="number" id="nominal" placeholder="Contoh: 25000">
 
@@ -448,9 +446,9 @@ Terima kasih sudah mendukung perjalanan dan perkembangan komunitas kami 💚
 
 <div class="form-group">
 
-<label>Pesan (Opsional)</label>
+<label>Pesan</label>
 
-<textarea id="pesan" placeholder="Tulis pesan untuk Sahabat SFX..."></textarea>
+<textarea id="pesan" placeholder="Tulis pesan untuk Sahabat SFX"></textarea>
 
 </div>
 
@@ -463,8 +461,6 @@ Saya Sudah Donasi
 </div>
 
 </div>
-
-<!-- DONATUR -->
 
 <div class="card donatur-list">
 
@@ -482,20 +478,12 @@ Saya Sudah Donasi
 
 </div>
 
-<!-- BACKGROUND MUSIC -->
-
 <audio id="bgMusic" autoplay loop>
-
 <source src="music.mp3" type="audio/mpeg">
-
 </audio>
 
-<!-- BUTTON SOUND -->
-
 <audio id="clickSound">
-
 <source src="click.mp3" type="audio/mpeg">
-
 </audio>
 
 <script>
@@ -514,6 +502,48 @@ event.target.classList.add('active');
 
 }
 
+</script>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import {
+
+getDatabase,
+ref,
+push,
+onValue
+
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+
+const firebaseConfig = {
+
+apiKey: "AIzaSyBdZk7FK3pdoMvgJjv1oRAn2-sZg3EFA7Y",
+
+authDomain: "sahabat-sfx.firebaseapp.com",
+
+databaseURL: "https://sahabat-sfx-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+projectId: "sahabat-sfx",
+
+storageBucket: "sahabat-sfx.firebasestorage.app",
+
+messagingSenderId: "537113825313",
+
+appId: "1:537113825313:web:9a197af50d493c7b721360",
+
+measurementId: "G-V8GF1SNLQN"
+
+};
+
+
+const app = initializeApp(firebaseConfig);
+
+const db = getDatabase(app);
+
+
 function formatRupiah(angka){
 
 return new Intl.NumberFormat('id-ID',{
@@ -525,17 +555,23 @@ currency:'IDR'
 
 }
 
+
 const ucapan = [
 
 "Terima kasih atas dukungannya 💚",
+
 "Semoga rezekinya lancar selalu ✨",
+
 "Support kamu sangat berarti 🙏",
+
 "Terima kasih sudah membantu Sahabat SFX 🚀",
+
 "Semoga segala kebaikan kembali kepada kamu 💚"
 
 ];
 
-function donasi(){
+
+window.donasi = function(){
 
 const nama = document.getElementById('nama').value || "Anonymous";
 
@@ -553,57 +589,18 @@ return;
 
 }
 
-const random = ucapan[Math.floor(Math.random()*ucapan.length)];
+const randomUcapan = ucapan[Math.floor(Math.random()*ucapan.length)];
 
-const html = `
+push(ref(db,"donasi"),{
 
-<div class="donatur">
+nama:nama,
+nominal:Number(nominal),
+metode:metode,
+pesan:pesan || randomUcapan,
+waktu:Date.now()
 
-<div class="donatur-left">
+});
 
-<div class="avatar">
-
-${nama.charAt(0).toUpperCase()}
-
-</div>
-
-<div>
-
-<h3>${nama}</h3>
-
-<p class="small">
-
-${pesan || random}
-
-</p>
-
-</div>
-
-</div>
-
-<div>
-
-<div class="nominal">
-
-${formatRupiah(nominal)}
-
-</div>
-
-<div class="small">
-
-${metode}
-
-</div>
-
-</div>
-
-</div>
-
-`;
-
-document.getElementById("listDonasi").innerHTML += html;
-
-alert(random);
 
 fetch("https://formsubmit.co/ajax/samudraprofx@gmail.com", {
 
@@ -625,38 +622,117 @@ pesan:pesan
 
 });
 
+
+alert(randomUcapan);
+
 document.getElementById('nama').value = "";
+
 document.getElementById('nominal').value = "";
+
 document.getElementById('pesan').value = "";
 
-}
+};
 
-// AUTOPLAY MUSIC FIX MOBILE
 
-document.addEventListener("click", function(){
+const listDonasi = document.getElementById("listDonasi");
+
+onValue(ref(db,"donasi"),(snapshot)=>{
+
+listDonasi.innerHTML = "";
+
+let data = [];
+
+snapshot.forEach((child)=>{
+
+data.push(child.val());
+
+});
+
+data.sort((a,b)=> b.nominal - a.nominal);
+
+data.forEach((item)=>{
+
+const html = `
+
+<div class="donatur">
+
+<div class="donatur-left">
+
+<div class="avatar">
+
+${item.nama.charAt(0).toUpperCase()}
+
+</div>
+
+<div>
+
+<h3>${item.nama}</h3>
+
+<p class="small">
+
+${item.pesan}
+
+</p>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="nominal">
+
+${formatRupiah(item.nominal)}
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+listDonasi.innerHTML += html;
+
+});
+
+});
+
+
+window.addEventListener("load", ()=>{
 
 const music = document.getElementById("bgMusic");
 
-if(music.paused){
+music.volume = 0.6;
 
-music.play();
+const playMusic = ()=>{
 
-}
+music.play().catch(()=>{});
 
-},{ once:true });
+document.removeEventListener("click", playMusic);
+
+document.removeEventListener("touchstart", playMusic);
+
+};
+
+document.addEventListener("click", playMusic);
+
+document.addEventListener("touchstart", playMusic);
+
+});
 
 
-// BUTTON CLICK SOUND
+document.querySelectorAll("button").forEach(button=>{
 
-document.querySelectorAll("button").forEach(btn=>{
+button.addEventListener("click", ()=>{
 
-btn.addEventListener("click", ()=>{
+const click = document.getElementById("clickSound");
 
-const sound = document.getElementById("clickSound");
+click.currentTime = 0;
 
-sound.currentTime = 0;
+click.volume = 1;
 
-sound.play();
+click.play();
 
 });
 
